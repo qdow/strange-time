@@ -27,7 +27,7 @@ function App() {
           </Routes>
       </Router>
 
-      <footer className="header-footer"> © 2024 <a href="https://github.com/qdow" target="_blank">qdow</a> </footer>
+      <footer className="header-footer"> © 2024 <a href="https://github.com/qdow/strange-time/tree/master" target="_blank">qdow</a> </footer>
     </>
   )
 }
