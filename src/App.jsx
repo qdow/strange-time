@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router basename={"/strange-time"}>
         <Navigation />
           <Routes>
             <Route path="/" element={<HomePage time={time} />} />
