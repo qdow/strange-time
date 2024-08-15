@@ -54,17 +54,23 @@ a:hover {
   color: #b7b7e8;
   font-style: normal;
   background-color: #4949b4;
-  border: 3px solid #b7b7e8;
+  border-color: #b7b7e8;
 }
 
 .time-blocks {
-  width: 35vw;
+  width: 40%;
   display: inline-block;
   background-color: #b7b7e8;
   border: 3px solid #4949b4;
   border-radius: 10px;
   font-size: 1.5em;
   margin: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  [class="time-blocks"] {
+    width: 90%;
+  }
 }
 
 .time-blocks a {
@@ -83,6 +89,23 @@ a:hover {
   width: 5vw;
   height: 3vh;
   margin: 0 15px;
+}
+
+.time-button {
+  color: #b7b7e8;
+  font-family: Raleway;
+  font-size: 0.3em;
+  background-color: #212171;
+  border: 2px solid #4949b4;
+  border-radius: 10px;
+  padding: 0 8px;
+  margin-left: 20px;
+}
+
+.time-button:hover {
+  color: #b7b7e8;
+  background-color: #4949b4;
+  border-color: #212171;
 }
 
 .header-footer {

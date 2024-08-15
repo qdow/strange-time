@@ -8,6 +8,7 @@ import OverTimePage from './pages/OverTimePage';
 import BinaryTimePage from './pages/BinaryTimePage';
 import NegativeTimePage from './pages/NegativeTimePage';
 import ColorTimePage from './pages/ColorTimePage';
+import RandomTimePage from './pages/RandomTimePage';
 
 function App() {
   const [time, setTime] = useState(new Date());
@@ -26,6 +27,7 @@ function App() {
             <Route path="/binary-time" element={<BinaryTimePage time={time} />} />
             <Route path="/negative-time" element={<NegativeTimePage time={time} />} />
             <Route path="/color-time" element={<ColorTimePage time={time} />} />
+            <Route path="/random-time" element={<RandomTimePage time={time} />} />
           </Routes>
       </Router>
 
