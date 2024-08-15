@@ -51,7 +51,7 @@ function HomePage({ time }) {
 
             <div>
                 <div className="time-blocks"> 
-                    <p><a href="/" onClick={e => {e.preventDefault(); navigate("/pokemon-time")}}>pokemon time!</a></p>
+                    <p><a href="/" onClick={e => {e.preventDefault(); navigate("/pokemon-time")}}>pokemon time !</a></p>
                     <PokemonTime time={time} /> 
                 </div>
             </div>
