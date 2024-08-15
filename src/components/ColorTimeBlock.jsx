@@ -1,4 +1,4 @@
-import { colors } from "../assets/colors.mjs";
+import colors from "../assets/colors";
 
 function ColorTimeBlock({ time }) {
     const blockColor = {

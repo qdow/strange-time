@@ -9,6 +9,7 @@ import BinaryTimePage from './pages/BinaryTimePage';
 import NegativeTimePage from './pages/NegativeTimePage';
 import ColorTimePage from './pages/ColorTimePage';
 import RandomTimePage from './pages/RandomTimePage';
+import PokemonTimePage from './pages/PokemonTimePage';
 
 function App() {
   const [time, setTime] = useState(new Date());
@@ -28,6 +29,7 @@ function App() {
             <Route path="/negative-time" element={<NegativeTimePage time={time} />} />
             <Route path="/color-time" element={<ColorTimePage time={time} />} />
             <Route path="/random-time" element={<RandomTimePage time={time} />} />
+            <Route path="/pokemon-time" element={<PokemonTimePage time={time} />} />
           </Routes>
       </Router>
 

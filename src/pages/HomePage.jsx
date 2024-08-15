@@ -1,10 +1,11 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import DecimalTime from "../components/DecimalTime";
 import OverTime from "../components/OverTime";
 import BinaryTime from "../components/BinaryTime";
 import NegativeTime from "../components/NegativeTime";
 import ColorTime from "../components/ColorTime";
 import RandomTime from "../components/RandomTime";
+import PokemonTime from "../components/PokemonTime";
 
 function HomePage({ time }) {
     const navigate = useNavigate();
@@ -45,6 +46,13 @@ function HomePage({ time }) {
                 <div className="time-blocks"> 
                     <p><a href="/" onClick={e => {e.preventDefault(); navigate("/random-time")}}>random time</a></p>
                     <RandomTime />
+                </div>
+            </div>
+
+            <div>
+                <div className="time-blocks"> 
+                    <p><a href="/" onClick={e => {e.preventDefault(); navigate("/pokemon-time")}}>pokemon time!</a></p>
+                    <PokemonTime time={time} /> 
                 </div>
             </div>
 

@@ -1,4 +1,4 @@
-export const colors = [
+[
 	"IndianRed", 
 	"LightCoral", 
 	"Crimson", 
