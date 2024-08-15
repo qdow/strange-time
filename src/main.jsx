@@ -6,8 +6,6 @@ import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <Router basename={"/strange-time/"}> */}
       <App />
-    {/* </Router> */}
   </StrictMode>,
 )

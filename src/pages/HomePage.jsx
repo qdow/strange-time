@@ -3,6 +3,7 @@ import DecimalTime from "../components/DecimalTime";
 import OverTime from "../components/OverTime";
 import BinaryTime from "../components/BinaryTime";
 import NegativeTime from "../components/NegativeTime";
+import ColorTime from "../components/ColorTime";
 
 function HomePage({ time }) {
     const navigate = useNavigate();
@@ -33,6 +34,17 @@ function HomePage({ time }) {
                     <p><a href="/" onClick={e => {e.preventDefault(); navigate("/negative-time")}}>negative time</a></p>
                     <NegativeTime time={time} /> 
                 </div>
+            </div>
+
+            <div>
+                <div className="time-blocks"> 
+                    <p><a href="/" onClick={e => {e.preventDefault(); navigate("/color-time")}}>color time</a></p>
+                    <ColorTime time={time} /> 
+                </div>
+                {/* <div className="time-blocks"> 
+                    <p><a href="/" onClick={e => {e.preventDefault(); navigate("/negative-time")}}>negative time</a></p>
+                    <NegativeTime time={time} /> 
+                </div> */}
             </div>
 
             <div><p className="tiny">(if someone else has made something like this before, I promise I am not copying, I just thought it was a silly fun little project idea!)</p></div>

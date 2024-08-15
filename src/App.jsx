@@ -7,6 +7,7 @@ import DecimalTimePage from './pages/DecimalTimePage';
 import OverTimePage from './pages/OverTimePage';
 import BinaryTimePage from './pages/BinaryTimePage';
 import NegativeTimePage from './pages/NegativeTimePage';
+import ColorTimePage from './pages/ColorTimePage';
 
 function App() {
   const [time, setTime] = useState(new Date());
@@ -24,6 +25,7 @@ function App() {
             <Route path="/over-time" element={<OverTimePage time={time} />} />
             <Route path="/binary-time" element={<BinaryTimePage time={time} />} />
             <Route path="/negative-time" element={<NegativeTimePage time={time} />} />
+            <Route path="/color-time" element={<ColorTimePage time={time} />} />
           </Routes>
       </Router>
 

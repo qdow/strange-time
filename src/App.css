@@ -58,7 +58,7 @@ a:hover {
 }
 
 .time-blocks {
-  width: 400px;
+  width: 35vw;
   display: inline-block;
   background-color: #b7b7e8;
   border: 3px solid #4949b4;
@@ -76,6 +76,13 @@ a:hover {
 .time-blocks a:hover {
   color: #212171;
   font-style: normal;
+}
+
+.color-block {
+  display: inline-block;
+  width: 5vw;
+  height: 3vh;
+  margin: 0 15px;
 }
 
 .header-footer {
